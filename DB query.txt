@@ -1,0 +1,26 @@
+create database proyecto
+
+create table usuarios(
+usuario varchar (20) primary key,
+nombre varchar (100),
+clave varchar (15)
+)
+create table pacientes(
+cedula varchar (10) primary key,
+nombre varchar (100),
+direccion varchar (200),
+telefono varchar (10)
+)
+create table historias(
+numero int identity (1,1),
+cedula varchar (10) primary key
+)
+create table medidas (
+cedula varchar (10),
+fecha date,
+ojoDer float,
+ejeDer float,
+ojoIzq float,
+ejeIzq float,
+observacion varchar (250)
+)
