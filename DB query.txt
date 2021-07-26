@@ -24,3 +24,6 @@ ojoIzq float,
 ejeIzq float,
 observacion varchar (250)
 )
+
+alter table pacientes
+add fecha_nacimiento date
